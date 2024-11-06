@@ -1,4 +1,4 @@
-package com.taksis.user.taksis
+package com.taksis.user
 
 import io.flutter.embedding.android.FlutterActivity
 
