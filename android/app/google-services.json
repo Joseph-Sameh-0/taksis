@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:196955145329:android:6e0b4be6cd57acae1087d0",
         "android_client_info": {
-          "package_name": "com.taksis"
+          "package_name": "com.taksis.user"
         }
       },
       "oauth_client": [],

@@ -67,7 +67,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '196955145329',
     projectId: 'taksis-4e8ff',
     storageBucket: 'taksis-4e8ff.firebasestorage.app',
-    iosBundleId: 'com.taksis.user.taksis',
+    iosBundleId: 'com.taksis.user',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
