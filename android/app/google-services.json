@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "196955145329",
+    "project_id": "taksis-4e8ff",
+    "storage_bucket": "taksis-4e8ff.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196955145329:android:6e0b4be6cd57acae1087d0",
+        "android_client_info": {
+          "package_name": "com.taksis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSudZQ_3_HOWD9mbdxCODY6VQBIEakTyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
