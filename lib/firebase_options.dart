@@ -44,39 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAqonBA6eMk-_JHx7B5yjdI8Bbf2yT_Ufo',
-    appId: '1:196955145329:web:c3ba3395d9d27a521087d0',
-    messagingSenderId: '196955145329',
-    projectId: 'taksis-4e8ff',
-    authDomain: 'taksis-4e8ff.firebaseapp.com',
-    storageBucket: 'taksis-4e8ff.firebasestorage.app',
-    measurementId: 'G-68JH5B7Z54',
+    apiKey: 'AIzaSyB3pmrEVZN9nCLgsGePb7WNpo1LdZYK0Gw',
+    appId: '1:777404274351:web:422202e56b91cfc487265a',
+    messagingSenderId: '777404274351',
+    projectId: 'taksis-754a6',
+    authDomain: 'taksis-754a6.firebaseapp.com',
+    storageBucket: 'taksis-754a6.firebasestorage.app',
+    measurementId: 'G-4P3MHTTT9W',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCSudZQ_3_HOWD9mbdxCODY6VQBIEakTyc',
-    appId: '1:196955145329:android:6e0b4be6cd57acae1087d0',
-    messagingSenderId: '196955145329',
-    projectId: 'taksis-4e8ff',
-    storageBucket: 'taksis-4e8ff.firebasestorage.app',
+    apiKey: 'AIzaSyC8y80kQglVO4J6vkS3gZScMppY3s8M8ik',
+    appId: '1:777404274351:android:e720f0c3406c016e87265a',
+    messagingSenderId: '777404274351',
+    projectId: 'taksis-754a6',
+    storageBucket: 'taksis-754a6.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAkOawH2kV5NomDd0PH9Gv-nTaP2De47po',
-    appId: '1:196955145329:ios:c5d78eb62b5789391087d0',
-    messagingSenderId: '196955145329',
-    projectId: 'taksis-4e8ff',
-    storageBucket: 'taksis-4e8ff.firebasestorage.app',
+    apiKey: 'AIzaSyDS5szTjPM52RzBPqGlefkawsAT1Hj6Lb4',
+    appId: '1:777404274351:ios:8d912ef2f18d05af87265a',
+    messagingSenderId: '777404274351',
+    projectId: 'taksis-754a6',
+    storageBucket: 'taksis-754a6.firebasestorage.app',
     iosBundleId: 'com.taksis.user',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyAqonBA6eMk-_JHx7B5yjdI8Bbf2yT_Ufo',
-    appId: '1:196955145329:web:c813040a13d063fc1087d0',
-    messagingSenderId: '196955145329',
-    projectId: 'taksis-4e8ff',
-    authDomain: 'taksis-4e8ff.firebaseapp.com',
-    storageBucket: 'taksis-4e8ff.firebasestorage.app',
-    measurementId: 'G-GFD5KMNJB9',
+    apiKey: 'AIzaSyB3pmrEVZN9nCLgsGePb7WNpo1LdZYK0Gw',
+    appId: '1:777404274351:web:87c0d8d96de1579887265a',
+    messagingSenderId: '777404274351',
+    projectId: 'taksis-754a6',
+    authDomain: 'taksis-754a6.firebaseapp.com',
+    storageBucket: 'taksis-754a6.firebasestorage.app',
+    measurementId: 'G-D4FHH2MLJ1',
   );
+
 }
