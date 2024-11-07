@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import '../../../Model/Product.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../models/Product.dart';
 
@@ -141,7 +142,7 @@ Widget cartCard(Product product, BuildContext context) {
                 Row(
                   children: [
                     IconButton(
-                      icon: Icon(Icons.minimize_outlined),
+                      icon: SvgPicture.asset("assets/icons/minus.svg",width: 20,),
                       onPressed: () {},
                     ),
                     SizedBox(

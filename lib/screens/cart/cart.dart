@@ -54,39 +54,59 @@ class Cart extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF45140E),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 24, vertical: 12),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        elevation: 8,
+        child: Row(
+          children: [
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text(
+                  "Total:",
+                  style: TextStyle(color: Color(0xFF45140E),fontSize: 18),
+                ),
+                Text(
+                  "₹ 7,000.00",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
                   ),
+                ),
+              ],
+            ),
+            SizedBox(width: 16,),
+            Expanded(
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xFF45140E),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 24, vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                onPressed: () {
+                  // Handle payment button press
+                },
+                child: MaterialButton(
+                  padding: EdgeInsets.zero,
                   onPressed: () {
-                    // Handle payment button press
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Scaffold())); //////////////
                   },
-                  child: MaterialButton(
-                    padding: EdgeInsets.zero,
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Scaffold())); ///////
-                    },
-                    child: const Text(
-                      "Proceed to Payment",
-                      style: TextStyle(fontSize: 16, color: Colors.white),
-                    ),
+                  child: const Text(
+                    "Proceed to Payment",
+                    style: TextStyle(fontSize: 16, color: Colors.white),
                   ),
                 ),
               ),
             ),
-            // MaterialButton(onPressed: () {}, child: Text("data"))
           ],
         ),
       ),
