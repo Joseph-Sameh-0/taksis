@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:taksis/colors.dart';
 
 import '../../../models/Product.dart';
 import '../../Shop page/shop_page.dart';
@@ -16,7 +17,7 @@ class ProductCardForGrid extends StatelessWidget {
 
     return GestureDetector(
       child: Card(
-        color: Colors.white,
+        color: lightPrimaryColor,
         elevation: 5,
         clipBehavior: Clip.antiAlias,
         child: SizedBox(

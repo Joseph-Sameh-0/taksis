@@ -51,7 +51,6 @@ Widget productSpecs(Product product) {
               '₹${product.price * product.discount / 100}',
               style: const TextStyle(
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
                   fontSize: 18),
             ),
             const SizedBox(width: 8),

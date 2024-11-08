@@ -19,7 +19,7 @@ class SplashScreen extends StatelessWidget {
           if (state is ConnectivityInitial) {
             return Center(child: CircularProgressIndicator());
           } else if (state is ConnectivityConnected) {
-            Timer(const Duration(seconds: 2), () {
+            Timer(const Duration(seconds: 1), () {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => MainScreen()),

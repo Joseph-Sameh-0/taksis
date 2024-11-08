@@ -10,7 +10,7 @@ Widget shoppingList(List<Product> bagProducts) {
       physics: NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemBuilder: (context, index) {
-        return cartCard(bagProducts[index], context);
+        return CartCard(product: bagProducts[index]);
       },
       separatorBuilder: (context, index) {
         return const Divider(); // Add a divider between items

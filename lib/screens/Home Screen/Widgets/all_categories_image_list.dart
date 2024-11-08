@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:loop_page_view/loop_page_view.dart'; // Import
+import 'package:taksis/colors.dart';
 
 import '../../../models/Category.dart';
 
@@ -55,7 +56,7 @@ class _AllCategoriesImageListState extends State<AllCategoriesImageList> {
                   backgroundImage: AssetImage(item.image),
                 ),
                 const SizedBox(height: 8),
-                Text(item.title),
+                Text(item.title,style: TextStyle(color: lightSecondaryColor),),
               ],
             ),
           );

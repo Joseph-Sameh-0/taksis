@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taksis/colors.dart';
 
 import '../Home Screen/Widgets/products.dart';
 import 'products_top_bar.dart';
@@ -12,6 +13,7 @@ class WishList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: primaryColor,
       appBar: MyAppBar(onNavigate: onNavigate),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 2),

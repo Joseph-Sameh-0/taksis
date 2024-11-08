@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:taksis/colors.dart';
 
 Widget forYou() {
   return Padding(
@@ -8,13 +9,14 @@ Widget forYou() {
       children: [
         const Expanded(
             child: Text(
-              "For You",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
-            )),
+          "For You",
+          style: TextStyle(
+              fontSize: 24, fontWeight: FontWeight.w500, color: lightSecondaryColor),
+        )),
         IconButton(
           onPressed: () {},
           icon: Material(
-            color: Colors.white,
+            color: lightSecondaryColor,
             elevation: 2,
             borderRadius: BorderRadius.circular(5),
             child: Container(
@@ -24,9 +26,9 @@ Widget forYou() {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Text('Sort'),
+                    const Text('Sort',style: TextStyle(color: primaryColor),),
                     const SizedBox(width: 4),
-                    SvgPicture.asset("assets/icons/sort.svg"),
+                    SvgPicture.asset("assets/icons/sort.svg",),
                   ],
                 ),
               ),
@@ -36,7 +38,7 @@ Widget forYou() {
         IconButton(
           onPressed: () {},
           icon: Material(
-            color: Colors.white,
+            color: lightSecondaryColor,
             elevation: 2,
             borderRadius: BorderRadius.circular(5),
             child: Container(
@@ -46,9 +48,9 @@ Widget forYou() {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text('Filter'),
+                    Text('Filter',style: TextStyle(color: primaryColor),),
                     SizedBox(width: 4),
-                    Icon(Icons.filter_alt),
+                    Icon(Icons.filter_alt,color: primaryColor,),
                   ],
                 ),
               ),

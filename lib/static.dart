@@ -1,8 +1,43 @@
+import 'models/Category.dart';
 import 'models/Product.dart';
+import 'models/address.dart';
+
+List<Category> myCategories = [
+  Category("assets/images/categories/البطرشيل.png", "البطرشيل"),
+  Category("assets/images/categories/التليك.png", "التليك"),
+  Category("assets/images/categories/التونية الحرير.png", "التونية الحرير"),
+  Category("assets/images/categories/الخولاجي.png", "الخولاجي المقدس"),
+  Category("assets/images/categories/الصدرات.png", "الصدرات"),
+  Category("assets/images/categories/الصنوج.png", "الصنوج"),
+  Category("assets/images/categories/تريانتو.png", "التريانتو"),
+  Category("assets/images/categories/دف نحاس.png", "دف نحاس"),
+  Category("assets/images/categories/دف نيكل.png", "دف نيكل"),
+  Category("assets/images/categories/شنطة التونية.png", "شنطة التونية"),
+  Category("assets/images/categories/صليب اكليريك.png", "صليب اكليريك"),
+  Category("assets/images/categories/صليب عاج وابانوس.png", "صليب عاج وابانوس"),
+  Category("assets/images/categories/منديل الاكليل.png", "منديل الاكليل"),
+];
+
+List<String> homeCards = [
+  'assets/images/cards/img.png',
+  'assets/images/cards/img_1.png',
+  'assets/images/cards/img_2.png',
+  'assets/images/cards/img_3.png',
+  'assets/images/cards/img_4.png',
+  'assets/images/cards/img_5.png',
+  'assets/images/cards/img_6.png',
+  'assets/images/cards/img_7.png',
+  'assets/images/cards/img_8.png',
+  'assets/images/cards/img_9.png',
+  'assets/images/cards/img_10.png',
+  'assets/images/cards/img_11.png',
+  'assets/images/cards/img_12.png',
+];
+
 
 List<Product> bagProducts = [
   Product(
-      ["assets/images/products/product1.png"],
+      ["assets/images/products/صليب عاج.png"],
       'Women Printed Kurta',
       "Neque porro quisquam est qui dolorem ipsum quia",
       "Neque porro quisquam est qui dolorem ipsum quia",
@@ -11,7 +46,7 @@ List<Product> bagProducts = [
       56890,
       4),
   Product(
-      ["assets/images/products/product2.png"],
+      ["assets/images/products/دف نحاس.png"],
       'HRX by Hrithik Roshan',
       "Neque porro quisquam est qui dolorem ipsum quia",
       "Neque porro quisquam est qui dolorem ipsum quia",
@@ -20,7 +55,7 @@ List<Product> bagProducts = [
       344567,
       4.5),
   Product(
-      ["assets/images/products/product3.png"],
+      ["assets/images/products/دف نيكل.png"],
       'Philips BHH880/10',
       "Hair Straightening Brush With Keratin Infused Bristles (Black).",
       "Hair Straightening Brush With Keratin Infused Bristles (Black).",
@@ -29,7 +64,7 @@ List<Product> bagProducts = [
       646776,
       3.5),
   Product(
-      ["assets/images/products/product4.png"],
+      ["assets/images/products/شنطة تونية.png"],
       'TITAN Men Watch- 1806N',
       "This Titan watch in Black color is I wanted to buy for a long time",
       "This Titan watch in Black color is I wanted to buy for a long time",
@@ -38,7 +73,7 @@ List<Product> bagProducts = [
       15007,
       5),
   Product(
-      ["assets/images/products/product5.png"],
+      ["assets/images/products/صليب ابانوس.png"],
       'IWC Schaffhausen',
       "2021 Pilot's Watch \"SIHH 2019\" 44mm",
       "2021 Pilot's Watch \"SIHH 2019\" 44mm",
@@ -47,7 +82,7 @@ List<Product> bagProducts = [
       56890,
       4),
   Product(
-      ["assets/images/products/product6.png"],
+      ["assets/images/products/صليب عاج.png"],
       'HRX by Hrithik Roshan',
       "Neque porro quisquam est qui dolorem ipsum quia",
       "Neque porro quisquam est qui dolorem ipsum quia",
@@ -56,7 +91,7 @@ List<Product> bagProducts = [
       344567,
       4.5),
   Product(
-      ["assets/images/products/product7.png"],
+      ["assets/images/products/صليب نحاس.png"],
       'Philips BHH880/10',
       "Hair Straightening Brush With Keratin Infused Bristles (Black).",
       "Hair Straightening Brush With Keratin Infused Bristles (Black).",
@@ -65,7 +100,7 @@ List<Product> bagProducts = [
       646776,
       3.5),
   Product(
-      ["assets/images/products/product8.png"],
+      ["assets/images/products/لقان استانليس.png"],
       'TITAN Men Watch- 1806N',
       "This Titan watch in Black color is I wanted to buy for a long time",
       "This Titan watch in Black color is I wanted to buy for a long time",
@@ -74,7 +109,7 @@ List<Product> bagProducts = [
       15007,
       5),
   Product(
-      ["assets/images/products/product9.png"],
+      ["assets/images/products/منديل اكليل.png"],
       'TITAN Men Watch- 1806N',
       "This Titan watch in Black color is I wanted to buy for a long time",
       "This Titan watch in Black color is I wanted to buy for a long time",
@@ -86,7 +121,7 @@ List<Product> bagProducts = [
 
 List<Product> productsList = [
   Product(
-      ["assets/images/products/product1.png"],
+      ["assets/images/products/صليب عاج.png"],
       'Women Printed Kurta',
       "Neque porro quisquam est qui dolorem ipsum quia",
       "Neque porro quisquam est qui dolorem ipsum quia",
@@ -95,7 +130,7 @@ List<Product> productsList = [
       56890,
       4),
   Product(
-      ["assets/images/products/product2.png"],
+      ["assets/images/products/دف نحاس.png"],
       'HRX by Hrithik Roshan',
       "Neque porro quisquam est qui dolorem ipsum quia",
       "Neque porro quisquam est qui dolorem ipsum quia",
@@ -104,7 +139,7 @@ List<Product> productsList = [
       344567,
       4.5),
   Product(
-      ["assets/images/products/product3.png"],
+      ["assets/images/products/دف نيكل.png"],
       'Philips BHH880/10',
       "Hair Straightening Brush With Keratin Infused Bristles (Black).",
       "Hair Straightening Brush With Keratin Infused Bristles (Black).",
@@ -113,7 +148,7 @@ List<Product> productsList = [
       646776,
       3.5),
   Product(
-      ["assets/images/products/product4.png"],
+      ["assets/images/products/شنطة تونية.png"],
       'TITAN Men Watch- 1806N',
       "This Titan watch in Black color is I wanted to buy for a long time",
       "This Titan watch in Black color is I wanted to buy for a long time",
@@ -122,7 +157,7 @@ List<Product> productsList = [
       15007,
       5),
   Product(
-      ["assets/images/products/product5.png"],
+      ["assets/images/products/صليب ابانوس.png"],
       'IWC Schaffhausen',
       "2021 Pilot's Watch \"SIHH 2019\" 44mm",
       "2021 Pilot's Watch \"SIHH 2019\" 44mm",
@@ -131,7 +166,7 @@ List<Product> productsList = [
       56890,
       4),
   Product(
-      ["assets/images/products/product6.png"],
+      ["assets/images/products/صليب عاج.png"],
       'HRX by Hrithik Roshan',
       "Neque porro quisquam est qui dolorem ipsum quia",
       "Neque porro quisquam est qui dolorem ipsum quia",
@@ -140,7 +175,7 @@ List<Product> productsList = [
       344567,
       4.5),
   Product(
-      ["assets/images/products/product7.png"],
+      ["assets/images/products/صليب نحاس.png"],
       'Philips BHH880/10',
       "Hair Straightening Brush With Keratin Infused Bristles (Black).",
       "Hair Straightening Brush With Keratin Infused Bristles (Black).",
@@ -149,7 +184,7 @@ List<Product> productsList = [
       646776,
       3.5),
   Product(
-      ["assets/images/products/product8.png"],
+      ["assets/images/products/لقان استانليس.png"],
       'TITAN Men Watch- 1806N',
       "This Titan watch in Black color is I wanted to buy for a long time",
       "This Titan watch in Black color is I wanted to buy for a long time",
@@ -158,7 +193,7 @@ List<Product> productsList = [
       15007,
       5),
   Product(
-      ["assets/images/products/product9.png"],
+      ["assets/images/products/منديل اكليل.png"],
       'TITAN Men Watch- 1806N',
       "This Titan watch in Black color is I wanted to buy for a long time",
       "This Titan watch in Black color is I wanted to buy for a long time",
@@ -169,16 +204,38 @@ List<Product> productsList = [
 ];
 
 List<String> productImages = [
-  'assets/images/products/product1.png',
-  'assets/images/products/product2.png',
-  'assets/images/products/product3.png',
-  'assets/images/products/product4.png',
-  'assets/images/products/product5.png',
-  'assets/images/products/product6.png',
-  'assets/images/products/product7.png',
-  'assets/images/products/product8.png',
-  'assets/images/products/product9.png',
+  'assets/images/products/صليب عاج.png',
+  'assets/images/products/دف نحاس.png',
+  'assets/images/products/شنطة تونية.png',
+  'assets/images/products/منديل اكليل.png',
+  'assets/images/products/صليب نحاس.png',
+  'assets/images/products/بطرشيل.png',
+  'assets/images/products/دف نيكل.png',
+  'assets/images/products/صليب ابانوس.png',
+  'assets/images/products/لقان استانليس.png',
 ];
 
 Product product = Product(productImages, 'IWC Schaffhausen',
     "2021 Pilot's Watch \"SIHH 2019\" 44mm","Perhaps the most iconic sneaker of all-time, this original \"Chicago\"? colorway is the cornerstone to any sneaker collection. Made famous in 1985 by Michael Jordan, the shoe has stood the test of time, becoming the most famous colorway of the Air Jordan 1. This 2015 release saw the", 1599, 60, 56890, 4);
+
+
+final List<Address> addresses = [
+  Address(
+      name: "address 1",
+      address: '123 Main St',
+      city: 'Anytown',
+      state: 'CA',
+      country: 'USA'),
+  Address(
+      name: "address 2",
+      address: '456 Elm St',
+      city: 'Otherville',
+      state: 'NY',
+      country: 'USA'),
+  Address(
+      name: "address 3",
+      address: '789 Oak St',
+      city: 'Someplace',
+      state: 'TX',
+      country: 'USA'),
+];

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:taksis/colors.dart';
 import 'package:taksis/screens/my_app_bar.dart';
+import 'package:taksis/screens/payment/checkout/checkout.dart';
+import 'package:taksis/screens/payment/place_order/place_order.dart';
 import 'package:taksis/static.dart';
 
 import 'widgets/address_section.dart';
@@ -13,6 +16,7 @@ class Cart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: primaryColor,
       appBar: MyAppBar(onNavigate: onNavigate),
       // AppBar(
       //   title: const Text(
@@ -36,14 +40,14 @@ class Cart extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      addressSection(),
+                      AddressSection(),
                       const SizedBox(height: 16),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 14.0),
                         child: const Text(
                           "Shopping List",
                           style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold,color: lightSecondaryColor),
                         ),
                       ),
                       const SizedBox(height: 8),
@@ -59,6 +63,7 @@ class Cart extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 8,
+        color: lightSecondaryColor,
         child: Row(
           children: [
             Column(
@@ -82,7 +87,7 @@ class Cart extends StatelessWidget {
             Expanded(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF45140E),
+                  backgroundColor: primaryColor,
                   padding: const EdgeInsets.symmetric(
                       horizontal: 24, vertical: 12),
                   shape: RoundedRectangleBorder(
@@ -98,11 +103,11 @@ class Cart extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => Scaffold())); //////////////
+                            builder: (context) => Checkout()));
                   },
                   child: const Text(
                     "Proceed to Payment",
-                    style: TextStyle(fontSize: 16, color: Colors.white),
+                    style: TextStyle(fontSize: 16, color: lightSecondaryColor),
                   ),
                 ),
               ),

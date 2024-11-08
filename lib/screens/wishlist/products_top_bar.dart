@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart' show SvgPicture;
+import 'package:taksis/colors.dart';
 
 Widget productsTopBar() {
   return Padding(
@@ -9,24 +10,24 @@ Widget productsTopBar() {
         const Expanded(
             child: Text(
           "Your wish list",
-          style: TextStyle(fontSize: 26, fontWeight: FontWeight.w500),
+          style: TextStyle(fontSize: 26, fontWeight: FontWeight.w500,color: lightSecondaryColor),
         )),
         IconButton(
           onPressed: () {},
           icon: Material(
-            color: Colors.white,
+            color: lightSecondaryColor,
             elevation: 2,
             borderRadius: BorderRadius.circular(5),
-            child: SizedBox(
+            child: Container(
               width: 70,
               height: 30,
               child: Center(
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Text('Sort'),
+                    const Text('Sort',style: TextStyle(color: primaryColor),),
                     const SizedBox(width: 4),
-                    SvgPicture.asset("assets/icons/sort.svg"),
+                    SvgPicture.asset("assets/icons/sort.svg",),
                   ],
                 ),
               ),
@@ -36,19 +37,19 @@ Widget productsTopBar() {
         IconButton(
           onPressed: () {},
           icon: Material(
-            color: Colors.white,
+            color: lightSecondaryColor,
             elevation: 2,
             borderRadius: BorderRadius.circular(5),
-            child: SizedBox(
+            child: Container(
               width: 70,
               height: 30,
               child: const Center(
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text('Filter'),
+                    Text('Filter',style: TextStyle(color: primaryColor),),
                     SizedBox(width: 4),
-                    Icon(Icons.filter_alt),
+                    Icon(Icons.filter_alt,color: primaryColor,),
                   ],
                 ),
               ),

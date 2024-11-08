@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taksis/colors.dart';
 import 'package:taksis/screens/Account/account.dart';
 import 'package:taksis/screens/Orders/orders.dart';
 
@@ -85,13 +86,11 @@ class _MainScreenState extends State<MainScreen> {
                 onPressed: () {
                   _onItemTapped(2);
                 },
-                backgroundColor: _selectedIndex == 2
-                    ? const Color(0xFFD6AA59)
-                    : Colors.white,
+                backgroundColor:
+                    _selectedIndex == 2 ? secondaryColor : Colors.white,
                 shape: const CircleBorder(),
                 child: Icon(Icons.shopping_cart_outlined,
-                    color:
-                        _selectedIndex == 2 ? Colors.white : Color(0xFF45140E)),
+                    color: _selectedIndex == 2 ? Colors.white : primaryColor),
               ),
             ),
           ],
@@ -99,7 +98,7 @@ class _MainScreenState extends State<MainScreen> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: Theme(
           data: Theme.of(context).copyWith(
-            canvasColor: Color(0xFF45140E),
+            canvasColor: primaryColor,
           ),
           child: BottomAppBar(
             padding: EdgeInsets.zero,
@@ -112,7 +111,7 @@ class _MainScreenState extends State<MainScreen> {
                 }
               },
               iconSize: 24,
-              selectedItemColor: const Color(0xFFD6AA59),
+              selectedItemColor: secondaryColor,
               unselectedItemColor: Colors.white,
               unselectedFontSize: 10,
               items: const [

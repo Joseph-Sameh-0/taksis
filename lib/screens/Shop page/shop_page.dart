@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taksis/colors.dart';
 
 import '../../static.dart';
 import '../main_screen.dart';
@@ -14,6 +15,7 @@ class ShopPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: primaryColor,
       appBar: AppBar(
         actions: [
           MaterialButton(
@@ -26,21 +28,28 @@ class ShopPage extends StatelessWidget {
                         )),
               );
             },
-            child: Icon(Icons.shopping_cart_outlined),
+            child: Icon(
+              Icons.shopping_cart_outlined,
+              color: lightSecondaryColor,
+            ),
           ),
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            ProductImages(imageUrls: product.images),
-            // ProductSizes(),
-            productSpecs(product),
-            productActionButtons(context),
-            // productDeliveryTime(),
-            // ProductOptions(),
-            // similar(),
-          ],
+        child: Material(
+          textStyle: TextStyle(color: lightSecondaryColor),
+          color: primaryColor,
+          child: Column(
+            children: [
+              ProductImages(imageUrls: product.images),
+              // ProductSizes(),
+              productSpecs(product),
+              productActionButtons(context),
+              // productDeliveryTime(),
+              // ProductOptions(),
+              // similar(),
+            ],
+          ),
         ),
       ),
     );

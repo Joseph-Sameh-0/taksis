@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taksis/colors.dart';
 // import 'package:p9/Screens/Profile/profile.dart';
 
 import '../../main_screen.dart';
@@ -8,10 +9,10 @@ Widget productActionButtons(BuildContext context) {
     padding: const EdgeInsets.all(8.0),
     child: Row(
       children: [
-        actionBar(Icons.shopping_cart_outlined, "Go to cart",
-            [Color(0xFF3F92FF), Color(0xFF0B3689)], context,MainScreen(index: 2)),
+        actionBar(Icons.shopping_cart_outlined, "add to cart",
+            [primaryColor, lightPrimaryColor], context,MainScreen(index: 2)),
         actionBar(Icons.ads_click, "Buy Now",
-            [Color(0xFF71F9A9), Color(0xFF31B769)], context,Scaffold()), //////////////////
+            [lightPrimaryColor, primaryColor], context,Scaffold()),
       ],
     ),
   );
@@ -41,7 +42,7 @@ Widget actionBar(IconData icon, String text, List<Color> gradientColors,
                 alignment: Alignment.center,
                 child: Container(
                   height: 50,
-                  width: 130,
+                  width: 140,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8.0),
                     shape: BoxShape.rectangle,
@@ -57,7 +58,7 @@ Widget actionBar(IconData icon, String text, List<Color> gradientColors,
                       padding: const EdgeInsets.only(right: 16.0),
                       child: Text(
                         text,
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        style: TextStyle(color: lightSecondaryColor, fontSize: 18),
                       ),
                     ),
                   ),
@@ -78,7 +79,7 @@ Widget actionBar(IconData icon, String text, List<Color> gradientColors,
               child: Center(
                   child: Icon(
                 icon,
-                color: Colors.white,
+                color: lightSecondaryColor,
               )),
             ),
           ],
